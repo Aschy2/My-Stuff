@@ -1,0 +1,94 @@
+{
+	"dimensions": [
+
+
+		{
+			"dim": -1,
+			"unregister": true,
+			"dimensiontype": {
+				"id": -1,
+				"name": "Nether",
+				"suffix": "_dim-1",
+				"keeploaded": false,
+				"worldprovider": "WorldProviderHell"
+			},
+			"worldinfo": {
+				"JED": {
+					"ForceGameMode": "true"
+				}
+			},
+			"worldinfo_onetime": {
+				"GameType": "2"
+			}
+		},
+
+		{
+			"dim": 0,
+			"dimensiontype": {
+				"id": 0,
+				"name": "RoughCraft Overworld",
+				"suffix": "_dim0",
+				"keeploaded": false
+			},
+			"worldinfo": {
+				"JED": {
+					"ForceGameMode": "true",
+					"CustomDayCycle": true,
+					"DayLength": 4500,
+					"NightLength": 6000
+				}
+			},
+			"worldinfo_onetime": {
+				"GameType": "2"
+			}
+		},
+
+		{
+			"dim": 2,
+			"dimensiontype": {
+				"id": 2,
+				"name": "Aluminium Falcon",
+				"suffix": "_dim2",
+				"keeploaded": false,
+				"worldprovider": "WorldProviderSurfaceJED"
+			},
+			"worldinfo": {
+				"JED": {
+					"ForceGameMode": "true",
+					"CustomDayCycle": true,
+					"DayLength": 4800,
+					"NightLength": 2400
+				}
+			},
+			"worldinfo_onetime": {
+				"RandomSeed": "Poopy Boy",
+				"GameType": "2"
+			}
+		},
+
+		{
+			"dim": 3,
+			"dimensiontype": {
+				"id": 3,
+				"name": "Flat Redstone Testing Dimension",
+				"suffix": "_dim3",
+				"keeploaded": false,
+				"worldprovider": "WorldProviderSurfaceJED"
+			},
+			"worldinfo": {
+				"JED": {
+					"ForceGameMode": "true",
+					"CustomDayCycle": true,
+					"DayLength": 4800,
+					"NightLength": 2400
+				}
+			},
+			"worldinfo_onetime": {
+				"generatorName": "flat",
+				"RandomSeed": "Is the Mika Boy",
+				"GameType": "1",
+				"generatorOptions": "3;minecraft:bedrock,59*minecraft:sandstone,7*minecraft:sand"
+			}
+		}
+	]
+}
