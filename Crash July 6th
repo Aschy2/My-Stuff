@@ -1,0 +1,204 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  LoadingPlugin (Quark-r1.1-70.jar)
+  TANLoadingPlugin (ToughAsNails-1.9.4-1.1.1.jar)
+  ProgressionTransformer (Progression-1.10.2-0.6.9.jar)
+  SurgeLoadingPlugin (Surge-1.10.2-1.1.0.70.jar)
+Contact their authors BEFORE contacting forge
+
+// I just don't know what went wrong :(
+
+Time: 7/6/17 4:59 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.forgeessentials.api.permissions.ServerZone.getAdditionalPlayerGroups(ServerZone.java:327)
+	at com.forgeessentials.api.permissions.ServerZone.getPlayerGroups(ServerZone.java:404)
+	at com.forgeessentials.api.permissions.ServerZone.getPlayerGroups(ServerZone.java:409)
+	at com.forgeessentials.permissions.core.ZonedPermissionHelper.getPlayerGroups(ZonedPermissionHelper.java:904)
+	at com.forgeessentials.permissions.core.ZonedPermissionHelper.hasPermission(ZonedPermissionHelper.java:783)
+	at net.minecraftforge.server.permission.PermissionAPI.hasPermission(PermissionAPI.java:84)
+	at net.minecraftforge.server.permission.PermissionAPI.hasPermission(PermissionAPI.java:95)
+	at net.minecraft.entity.player.EntityPlayer.func_189808_dh(EntityPlayer.java:2701)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_187099_a(PlayerControllerMP.java:439)
+	at PlayerControllerOF.func_187099_a(PlayerControllerOF.java:88)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1518)
+	at net.minecraft.client.Minecraft.func_184117_aA(Minecraft.java:2184)
+	at net.minecraft.client.Minecraft.func_184118_az(Minecraft.java:1961)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1749)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1055)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:371)
+	at net.minecraft.client.main.Main.main(SourceFile:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:236)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:297)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:162)
+	at org.multimc.EntryPoint.main(EntryPoint.java:53)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at com.forgeessentials.api.permissions.ServerZone.getAdditionalPlayerGroups(ServerZone.java:327)
+	at com.forgeessentials.api.permissions.ServerZone.getPlayerGroups(ServerZone.java:404)
+	at com.forgeessentials.api.permissions.ServerZone.getPlayerGroups(ServerZone.java:409)
+	at com.forgeessentials.permissions.core.ZonedPermissionHelper.getPlayerGroups(ZonedPermissionHelper.java:904)
+	at com.forgeessentials.permissions.core.ZonedPermissionHelper.hasPermission(ZonedPermissionHelper.java:783)
+	at net.minecraftforge.server.permission.PermissionAPI.hasPermission(PermissionAPI.java:84)
+	at net.minecraftforge.server.permission.PermissionAPI.hasPermission(PermissionAPI.java:95)
+	at net.minecraft.entity.player.EntityPlayer.func_189808_dh(EntityPlayer.java:2701)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_187099_a(PlayerControllerMP.java:439)
+	at PlayerControllerOF.func_187099_a(PlayerControllerOF.java:88)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1518)
+	at net.minecraft.client.Minecraft.func_184117_aA(Minecraft.java:2184)
+	at net.minecraft.client.Minecraft.func_184118_az(Minecraft.java:1961)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Aschy'/209514, l='MpServer', x=-28429.43, y=79.00, z=28642.52]]
+	Chunk stats: MultiplayerChunkCache: 625, 625
+	Level seed: 0
+	Level generator: ID 07 - RTG, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-29839,57,29158), Chunk: (at 1,3,6 in -1865,1822; contains blocks -29840,0,29152 to -29825,255,29167), Region: (-59,56; contains chunks -1888,1792 to -1857,1823, blocks -30208,0,28672 to -29697,255,29183)
+	Level time: 433265381 game time, 28975282 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 74 total; [EntityPlayerSP['Aschy'/209514, l='MpServer', x=-28429.43, y=79.00, z=28642.52], EntityBat['Bat'/237825, l='MpServer', x=-28472.90, y=54.38, z=28594.08], EntitySkeleton['Robo-Archer'/257028, l='MpServer', x=-28400.50, y=21.00, z=28641.50], EntityZombie['Defective Robot'/247819, l='MpServer', x=-28422.77, y=46.00, z=28578.49], EntityCreeper['Malfunctioning Prototype'/256523, l='MpServer', x=-28464.50, y=37.00, z=28586.50], EntityCreeper['Malfunctioning Prototype'/256522, l='MpServer', x=-28462.50, y=37.00, z=28587.50], EntityZombie['Defective Robot'/254473, l='MpServer', x=-28428.78, y=43.06, z=28576.50], EntityZombie['Defective Robot'/254472, l='MpServer', x=-28428.08, y=43.06, z=28576.50], EntityZombie['Defective Robot'/243988, l='MpServer', x=-28428.50, y=25.00, z=28640.50], EntityZombie['Defective Robot'/257055, l='MpServer', x=-28353.50, y=23.00, z=28618.50], EntityCreeper['Malfunctioning Prototype'/255516, l='MpServer', x=-28499.50, y=47.00, z=28619.50], EntityZombie['Defective Robot'/256803, l='MpServer', x=-28427.19, y=31.00, z=28668.51], EntityZombie['Defective Robot'/256802, l='MpServer', x=-28421.50, y=30.00, z=28663.50], EntityZombie['Defective Robot'/249121, l='MpServer', x=-28408.81, y=40.00, z=28629.50], EntityBabySkeleton['Baby Skeleton'/255521, l='MpServer', x=-28409.50, y=20.00, z=28603.50], EntitySpider['Portal Spider'/257062, l='MpServer', x=-28497.74, y=21.00, z=28634.21], EntitySpider['Portal Spider'/257061, l='MpServer', x=-28499.51, y=19.00, z=28624.00], EntitySkeleton['Robo-Archer'/256804, l='MpServer', x=-28420.65, y=36.00, z=28651.75], EntityBat['Bat'/257320, l='MpServer', x=-28504.25, y=48.70, z=28601.28], EntityItem['item.item.rottenFlesh'/239663, l='MpServer', x=-28469.70, y=73.00, z=28621.81], EntityBat['Bat'/257325, l='MpServer', x=-28489.25, y=51.29, z=28595.53], EntityZombie['Defective Robot'/257075, l='MpServer', x=-28449.50, y=27.00, z=28596.50], EntitySkeleton['Robo-Archer'/256059, l='MpServer', x=-28503.50, y=52.00, z=28594.50], EntityBat['Bat'/256831, l='MpServer', x=-28401.93, y=47.10, z=28717.83], EntitySkeleton['Robo-Archer'/256060, l='MpServer', x=-28505.47, y=52.00, z=28592.91], EntityZombie['Defective Robot'/256322, l='MpServer', x=-28433.24, y=31.00, z=28668.06], EntityBat['Bat'/256832, l='MpServer', x=-28397.30, y=47.55, z=28721.88], EntityBat['Bat'/253263, l='MpServer', x=-28401.44, y=22.03, z=28682.74], EntityCreeper['Malfunctioning Prototype'/256847, l='MpServer', x=-28507.50, y=50.00, z=28620.50], EntityZombieChicken['Zombie Chicken'/256339, l='MpServer', x=-28432.54, y=31.00, z=28667.63], EntityBabyZombie['Defective Robot'/256338, l='MpServer', x=-28432.51, y=31.45, z=28667.53], EntityZombieChicken['Zombie Chicken'/256341, l='MpServer', x=-28432.17, y=31.00, z=28666.86], EntitySkeleton['Robo-Archer'/255835, l='MpServer', x=-28463.10, y=27.00, z=28595.54], EntitySkeleton['Robo-Archer'/255838, l='MpServer', x=-28462.50, y=27.00, z=28595.50], EntitySkeleton['Robo-Archer'/255837, l='MpServer', x=-28456.75, y=27.00, z=28592.51], EntitySkeleton['Robo-Archer'/255836, l='MpServer', x=-28465.50, y=27.00, z=28595.50], EntityBat['Bat'/257134, l='MpServer', x=-28462.55, y=39.70, z=28579.70], EntityEnderman['Telebot'/256883, l='MpServer', x=-28494.48, y=23.00, z=28577.68], EntityBabyCreeper['Baby Creeper'/251777, l='MpServer', x=-28435.78, y=31.00, z=28663.50], EntityBabyCreeper['Baby Creeper'/251776, l='MpServer', x=-28436.52, y=31.00, z=28663.50], EntitySkeleton['Robo-Archer'/255114, l='MpServer', x=-28404.50, y=43.00, z=28609.50], EntityCreeper['Malfunctioning Prototype'/234632, l='MpServer', x=-28497.30, y=21.00, z=28633.10], EntityBabySkeleton['Baby Skeleton'/251784, l='MpServer', x=-28491.50, y=49.00, z=28599.50], EntitySkeleton['Robo-Archer'/257179, l='MpServer', x=-28430.50, y=61.00, z=28599.50], EntityBabyCreeper['Baby Creeper'/253601, l='MpServer', x=-28404.50, y=20.00, z=28607.50], EntityBat['Bat'/216747, l='MpServer', x=-28473.55, y=58.10, z=28586.25], EntityItem['item.item.rottenFlesh'/236459, l='MpServer', x=-28468.92, y=73.00, z=28620.63], EntityZombie['Defective Robot'/209577, l='MpServer', x=-28508.70, y=47.00, z=28599.70], EntityCreeper['Malfunctioning Prototype'/257200, l='MpServer', x=-28416.50, y=33.00, z=28657.50], EntitySpider['Portal Spider'/257205, l='MpServer', x=-28447.30, y=45.10, z=28668.93], EntityBat['Bat'/255418, l='MpServer', x=-28405.58, y=22.02, z=28659.88], EntityItem['item.item.rottenFlesh'/213950, l='MpServer', x=-28372.80, y=72.00, z=28590.27], EntityBat['Bat'/255421, l='MpServer', x=-28401.50, y=24.70, z=28662.53], EntitySpider['Portal Spider'/215495, l='MpServer', x=-28446.70, y=74.00, z=28610.07], EntityBat['Bat'/257235, l='MpServer', x=-28451.68, y=48.07, z=28661.34], EntityCustomNpc['Town Ranged Guard'/209633, l='MpServer', x=-28473.70, y=76.00, z=28606.70], EntityZombie['Defective Robot'/257255, l='MpServer', x=-28386.52, y=44.02, z=28708.15], EntityZombie['Defective Robot'/257254, l='MpServer', x=-28388.50, y=43.00, z=28717.50], EntityCustomNpc['William'/209643, l='MpServer', x=-28476.50, y=74.00, z=28620.50], EntityCreeper['Malfunctioning Prototype'/257259, l='MpServer', x=-28406.19, y=30.00, z=28699.30], EntitySpider['Portal Spider'/257258, l='MpServer', x=-28387.50, y=43.00, z=28714.50], EntityCustomNpc['Ren'/209647, l='MpServer', x=-28469.51, y=80.00, z=28609.68], EntityCustomNpc['Town Ranged Guard'/209645, l='MpServer', x=-28469.08, y=77.60, z=28621.70], EntityCustomNpc['RoughCraftian Greeter'/209644, l='MpServer', x=-28475.50, y=71.94, z=28608.50], EntitySkeleton['Robo-Archer'/257260, l='MpServer', x=-28407.90, y=30.00, z=28702.51], EntityZombie['Defective Robot'/257266, l='MpServer', x=-28423.71, y=53.00, z=28589.29], EntityZombie['Defective Robot'/241649, l='MpServer', x=-28472.50, y=14.00, z=28586.50], EntityZombie['Defective Robot'/257265, l='MpServer', x=-28420.50, y=51.00, z=28585.50], EntityCreeper['Malfunctioning Prototype'/254459, l='MpServer', x=-28400.50, y=28.00, z=28590.50], EntityBat['Bat'/256251, l='MpServer', x=-28385.55, y=44.10, z=28710.52], EntityBabySkeleton['Baby Skeleton'/257275, l='MpServer', x=-28407.07, y=30.00, z=28702.50], EntityBat['Bat'/256250, l='MpServer', x=-28385.23, y=44.36, z=28708.30], EntityZombie['Defective Robot'/254457, l='MpServer', x=-28399.24, y=28.00, z=28590.56], EntitySkeleton['Robo-Archer'/254462, l='MpServer', x=-28394.50, y=30.00, z=28621.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:524)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2660)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:400)
+	at net.minecraft.client.main.Main.main(SourceFile:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:236)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:297)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:162)
+	at org.multimc.EntryPoint.main(EntryPoint.java:53)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_131, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1289864000 bytes (1230 MB) / 2620391424 bytes (2499 MB) up to 3817865216 bytes (3641 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms512m -Xmx4096m
+	IntCache: cache: 0, tcache: 0, allocated: 9, tallocated: 61
+	FML: MCP 9.32 Powered by Forge 12.18.3.2281 Optifine OptiFine_1.10.2_HD_U_D7 47 mods loaded, 47 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJA	FML{8.0.99.99} [Forge Mod Loader] (forge-1.10.2-12.18.3.2281-universal.jar) 
+	UCHIJA	Forge{12.18.3.2281} [Minecraft Forge] (forge-1.10.2-12.18.3.2281-universal.jar) 
+	UCHIJA	thedragonlib{1.10.2-1.3.1} [TheDragonLib] (thedragonlib-1.10.2-1.0.3.1.jar) 
+	UCHIJA	armorplus{1.10.2-8.7.1.2} [ArmorPlus] (armorplus-1.10.2-8.7.1.2.jar) 
+	UCHIJA	Quark{r1.1-70} [Quark] (Quark-r1.1-70.jar) 
+	UCHIJA	AutoRegLib{1.0-2} [AutoRegLib] (AutoRegLib-1.0-2.jar) 
+	UCHIJA	babymobs{1.5.4} [Baby Mobs] (BabyMobs-1.10.2-1.5.4.jar) 
+	UCHIJA	XaeroBetterPvP{1.11.4} [Better PVP Mod] (BetterPvP_1.11.4_Forge_1.10.2.jar) 
+	UCHIJA	betterquesting{2.3.234} [Better Questing] (BetterQuesting-2.3.234.jar) 
+	UCHIJA	crafttweakerjei{1.0.1} [CraftTweaker JEI Support] (CraftTweaker-1.10.2-3.0.20.jar) 
+	UCHIJA	JEI{3.14.7.417} [Just Enough Items] (jei_1.10.2-3.14.7.417.jar) 
+	UCHIJA	MineTweaker3{3.0.20} [MineTweaker 3] (CraftTweaker-1.10.2-3.0.20.jar) 
+	UCHIJA	ctgui{1.0.0} [CT-GUI] (CraftTweaker-1.10.2-3.0.20.jar) 
+	UCHIJA	customnpcs{1.10.2} [CustomNPCs] (CustomNPCs_1.10.2(25may17).jar) 
+	UCHIJA	PTRModelLib{1.0.0} [PTRModelLib] (Decocraft-2.3.6.1_1.10.2.jar) 
+	UCHIJA	props{2.3.6.1} [Decocraft] (Decocraft-2.3.6.1_1.10.2.jar) 
+	UCHIJA	excore{1.6.2} [EXCore] (Excore-1.6.2-1.10.2.jar) 
+	UCHIJA	llor{1.1.0-mc[1.9-1.10.2]} [Light Level Overlay Reloaded] (Light-Level-Overlay-Reloaded-Mod-1.10.2.jar) 
+	UCHIJA	FEI{1.0.17.2} [Forever Enough Items] (ForeverEnoughItems-1.0.17.2-1.10.2.jar) 
+	UCHIJA	forgeessentials{10.2} [Forge Essentials] (forgeessentials-1.10.2-10.2.1356-server.jar) 
+	UCHIJA	gemcraft{1.2.5} [Gem Craft] (gemcraft-1.10.2-1.2.5.jar) 
+	UCHIJA	gravestone{1.5.12} [Gravestone] (GraveStone Mod 1.5.12.jar) 
+	UCHIJA	justenoughdimensions{1.5.1} [Just Enough Dimensions] (justenoughdimensions-1.10.2-1.5.1.jar) 
+	UCHIJA	KaishiWeapons{v0.1} [Kaishi's Weapons Pack] (KaishiWeapons-1.9.4.jar) 
+	UCHIJA	levelup{${version}} [Level Up!] (LevelUp!-0.12.9-1.10.2.jar) 
+	UCHIJA	mtrm{1.2.1.20} [MineTweakerRecipeMaker] (MineTweakerRecipeMaker-1.10.2-1.2.1.20.jar) 
+	UCHIJA	morematerials{1.10.2-1.9.20160723.0} [More Materials] (morematerials-1.10.2-1.9.20160723.0.jar) 
+	UCHIJA	Neat{GRADLE:VERSION-GRADLE:BUILD} [Neat] (Neat 1.3-10.jar) 
+	UCHIJA	netherportalfix{1.0} [Nether Portal Fix] (netherportalfix-mc1.9.4-4.0.1.jar) 
+	UCHIJA	bq_npc_integration{CI_MOD_VERSION} [NPC Integration] (NPCIntegration-2.3.22.jar) 
+	UCHIJA	packchevsky{b7} [Potion Packs] (PotionPacks_1.10_b7.jar) 
+	UCHIJA	progression{0.6.9} [Progression] (Progression-1.10.2-0.6.9.jar) 
+	UCHIJA	recallstones{0.6.3} [Recall Stones] (RecallStones-1.10.2-0.6.3.jar) 
+	UCHIJA	bq_rf{2.3.24} [RF Expansion] (RFExpansion-2.3.24.jar) 
+	UCHIJA	roughMobs{1.0} [Rough Mobs] (roughMobs1.0.9-1.10.2.jar) 
+	UCHIJA	RTG{4.1.2.4} [Realistic Terrain Generation] (RTG-1.10.2-4.1.2.4.jar) 
+	UCHIJA	spartanshields{1.1b} [Spartan Shields] (SpartanShields-1.10.2-1.1b.jar) 
+	UCHIJA	bq_standard{2.3.131} [Standard Expansion] (StandardExpansion-2.3.131.jar) 
+	UCHIJA	surge{1.1.0.1} [Surge] (Surge-1.10.2-1.1.0.70.jar) 
+	UCHIJA	switchbow{1.3} [Switch-Bow] (switchbow-1.3.jar) 
+	UCHIJA	beneath{1.2.0} [The Beneath] (The Beneath-1.10.2-1.2.0.jar) 
+	UCHIJA	ToughAsNails{@MOD_VERSION@} [Tough As Nails] (ToughAsNails-1.9.4-1.1.1.jar) 
+	UCHIJA	treechopper{1.1.1a} [Tree Chopper] (TreeChopper-1.10.2-1.1.1a.jar) 
+	UCHIJA	worldedit{6.1.4} [WorldEdit] (worldedit-forge-mc1.10.2-6.1.4-dist.jar) 
+	UCHIJA	examplemod{1.0} [examplemod] (WTF-Expedition_1.10.2_v1.5Beta1.jar) 
+	UCHIJA	wtfcore{1.10.2_v1.5} [WTFs-Expedition] (WTF-Expedition_1.10.2_v1.5Beta1.jar) 
+	Loaded coremods (and transformers): 
+LoadingPlugin (Quark-r1.1-70.jar)
+  vazkii.quark.base.asm.ClassTransformer
+TANLoadingPlugin (ToughAsNails-1.9.4-1.1.1.jar)
+  toughasnails.asm.transformer.BlockCropsTransformer
+  toughasnails.asm.transformer.EntityRendererTransformer
+  toughasnails.asm.transformer.WorldTransformer
+ProgressionTransformer (Progression-1.10.2-0.6.9.jar)
+  joshie.progression.asm.ProgressionTransformer
+SurgeLoadingPlugin (Surge-1.10.2-1.1.0.70.jar)
+  org.epoxide.surge.asm.SurgeTransformerManager
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 382.05' Renderer: 'GeForce GTX 760/PCIe/SSE2'
+	ForgeEssentials: Running ForgeEssentials 10.2.1356 (754143d). Modules loaded: Afterlife, Backups, Chat, Commands, Economy, JScripting, Multiworld, Permissions, PlayerLogger, Protection, Remote, SignTools, Teleport, Tickets, WEIntegrationTools, WorldBorder, factions, mapper
+	Launched Version: MultiMC5
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 760/PCIe/SSE2 GL version 4.5.0 NVIDIA 382.05, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: WTFExpedition, Precisely Portal.zip
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x AMD FX(tm)-8320 Eight-Core Processor 
+	OptiFine Version: OptiFine_1.10.2_HD_U_D7
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.5.0 NVIDIA 382.05
+	OpenGlRenderer: GeForce GTX 760/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 8
