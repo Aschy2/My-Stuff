@@ -1,1062 +1,1812 @@
 {
-	"version": "1.1",
-	"dimensions": [{
-			"dimension": "-1",
-			"ores": [{}]
+	"version": "2.0",
+	"spawns": {
+		"coal": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 25,
+				"variation": 12,
+				"frequency": 24,
+				"minHeight": 0,
+				"maxHeight": 30
+			},
+			"blocks": [{
+				"name": "minecraft:coal_ore",
+				"chance": 100
+			}]
 		},
-		{
-			"ores": [{
-					"block": "minecraft:coal_ore",
-					"parameters": {
-						"size": 25,
-						"variation": 12,
-						"frequency": 24,
-						"minHeight": 0,
-						"maxHeight": 30
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:iron_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 2,
-						"minHeight": 30,
-						"maxHeight": 40
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:iron_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 30
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:gold_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 2,
-						"frequency": 6,
-						"minHeight": 0,
-						"maxHeight": 35
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:diamond_ore",
-					"parameters": {
-						"size": 6,
-						"variation": 3,
-						"frequency": 0.35,
-						"minHeight": 0,
-						"maxHeight": 12
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:redstone_ore",
-					"parameters": {
-						"size": 6,
-						"variation": 3,
-						"frequency": 8,
-						"minHeight": 0,
-						"maxHeight": 50
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:lapis_ore",
-					"parameters": {
-						"size": 5,
-						"variation": 2,
-						"frequency": 1.5,
-						"minHeight": 0,
-						"maxHeight": 32
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:lapis_ore",
-					"parameters": {
-						"size": 5,
-						"variation": 2,
-						"frequency": 0.5,
-						"minHeight": 32,
-						"maxHeight": 50
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:emerald_ore",
-					"parameters": {
-						"size": 1,
-						"variation": 0,
-						"frequency": 1.0,
-						"minHeight": 1,
-						"maxHeight": 25
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:quartz_ore",
-					"parameters": {
-						"size": 15,
-						"variation": 8,
-						"frequency": 0.25,
-						"minHeight": 0,
-						"maxHeight": 30
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:dirt",
-					"state": "snowy=false,variant=dirt",
-					"parameters": {
-						"size": 112,
-						"variation": 50,
-						"frequency": 20.0,
-						"minHeight": 0,
-						"maxHeight": 255
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:gravel",
-					"parameters": {
-						"size": 112,
-						"variation": 50,
-						"frequency": 16.0,
-						"minHeight": 0,
-						"maxHeight": 255
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:stone",
-					"state": "variant=granite",
-					"parameters": {
-						"size": 112,
-						"variation": 50,
-						"frequency": 20.0,
-						"minHeight": 0,
-						"maxHeight": 255
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:stone",
-					"state": "variant=diorite",
-					"parameters": {
-						"size": 112,
-						"variation": 50,
-						"frequency": 20.0,
-						"minHeight": 0,
-						"maxHeight": 255
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:stone",
-					"state": "variant=andesite",
-					"parameters": {
-						"size": 112,
-						"variation": 50,
-						"frequency": 20.0,
-						"minHeight": 0,
-						"maxHeight": 255
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:glowstone",
-					"parameters": {
-						"size": 15,
-						"variation": 4,
-						"frequency": 0.25,
-						"minHeight": 0,
-						"maxHeight": 20
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:stone0DecoAnim",
-					"parameters": {
-						"size": 15,
-						"variation": 0,
-						"frequency": 200,
-						"minHeight": 0,
-						"maxHeight": 12
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:stone0DecoAnim",
-					"parameters": {
-						"size": 9,
-						"variation": 0,
-						"frequency": 160,
-						"minHeight": 13,
-						"maxHeight": 20
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:stone0DecoAnim",
-					"parameters": {
-						"size": 8,
-						"variation": 0,
-						"frequency": 140,
-						"minHeight": 21,
-						"maxHeight": 25
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:stone0DecoAnim",
-					"parameters": {
-						"size": 7,
-						"variation": 0,
-						"frequency": 120,
-						"minHeight": 26,
-						"maxHeight": 30
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:stone0DecoAnim",
-					"parameters": {
-						"size": 6,
-						"variation": 0,
-						"frequency": 100,
-						"minHeight": 31,
-						"maxHeight": 35
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:stone0DecoAnim",
-					"parameters": {
-						"size": 5,
-						"variation": 0,
-						"frequency": 80,
-						"minHeight": 36,
-						"maxHeight": 40
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:stone0DecoAnim",
-					"parameters": {
-						"size": 4,
-						"variation": 0,
-						"frequency": 60,
-						"minHeight": 41,
-						"maxHeight": 45
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:stone0DecoAnim",
-					"parameters": {
-						"size": 3,
-						"variation": 0,
-						"frequency": 40,
-						"minHeight": 46,
-						"maxHeight": 50
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:stone0DecoAnim",
-					"parameters": {
-						"size": 2,
-						"variation": 0,
-						"frequency": 20,
-						"minHeight": 51,
-						"maxHeight": 55
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:stone0DecoAnim",
-					"parameters": {
-						"size": 1,
-						"variation": 0,
-						"frequency": 10,
-						"minHeight": 56,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:nitre_ore",
-					"parameters": {
-						"size": 4,
-						"variation": 2,
-						"frequency": 4,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "wtfcore:nitre_ore",
-					"parameters": {
-						"size": 4,
-						"variation": 2,
-						"frequency": 6,
-						"minHeight": 1,
-						"maxHeight": 30
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Natural Andesite",
-					"block": "conquest:stone_full_2",
-					"metaData": 7,
-					"parameters": {
-						"size": 20,
-						"variation": 3,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Smooth Limestone",
-					"block": "conquest:stone_full_18",
-					"metaData": 15,
-					"parameters": {
-						"size": 50,
-						"variation": 10,
-						"frequency": 0.6,
-						"minHeight": 1,
-						"maxHeight": 80
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Colourful Slate",
-					"block": "conquest:stone_full_1",
-					"metaData": 5,
-					"parameters": {
-						"size": 50,
-						"variation": 10,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 80
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Slate",
-					"block": "conquest:stone_full_14",
-					"metaData": 9,
-					"parameters": {
-						"size": 50,
-						"variation": 10,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 80
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Uncut Marble",
-					"block": "conquest:stone_full_14",
-					"metaData": 10,
-					"parameters": {
-						"size": 50,
-						"variation": 10,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 80
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Grey and Pink Granite",
-					"block": "conquest:stone_full_14",
-					"metaData": 11,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 80
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Light Brown Mesa Stone",
-					"block": "conquest:stone_full_14",
-					"metaData": 13,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 80
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["MESA"] }
-				},
-				{
-					"block": "conquest:stone_full_17",
-					"metaData": 4,
-					"parameters": {
-						"size": 50,
-						"variation": 10,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 80
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["minecraft:desert"] }
-				},
-				{
-					"block": "conquest:stone_full_2",
-					"metaData": 7,
-					"parameters": {
-						"size": 20,
-						"variation": 10,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 40
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Natural Red Mossy Sandstone",
-					"block": "conquest:stone_full_2",
-					"metaData": 15,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 0,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["minecraft:desert"] }
-				},
-				{
-					"__comment": "Gneiss",
-					"block": "conquest:stone_full_26",
-					"metaData": 3,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 0,
-						"maxHeight": 90
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Green Schist",
-					"block": "conquest:stone_full_26",
-					"metaData": 4,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 0,
-						"maxHeight": 90
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Gray Quartzite",
-					"block": "conquest:stone_full_26",
-					"metaData": 5,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 0,
-						"maxHeight": 40
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["minecraft:desert"] }
-				},
-				{
-					"__comment": "Pink Quartzite",
-					"block": "conquest:stone_full_26",
-					"metaData": 6,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 0,
-						"maxHeight": 40
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["minecraft:desert"] }
-				},
-				{
-					"__comment": "Calcite",
-					"block": "conquest:stone_full_26",
-					"metaData": 12,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 80
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Black Marble",
-					"block": "conquest:stone_full_15",
-					"metaData": 15,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["minecraft:desert"] }
-				},
-				{
-					"__comment": "Blue Marble",
-					"block": "conquest:stone_full_16",
-					"metaData": 0,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["SNOWY"] }
-				},
-				{
-					"__comment": "Gray Marble",
-					"block": "conquest:stone_full_16",
-					"metaData": 1,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["MESA"] }
-				},
-				{
-					"__comment": "Green Marble",
-					"block": "conquest:stone_full_16",
-					"metaData": 2,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["FOREST"] }
-				},
-				{
-					"__comment": "Pink Marble",
-					"block": "conquest:stone_full_16",
-					"metaData": 3,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["SAVANNA"] }
-				},
-				{
-					"__comment": "Red Marble",
-					"block": "conquest:stone_full_16",
-					"metaData": 4,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["minecraft:desert"] }
-				},
-				{
-					"__comment": "Blue Schist",
-					"block": "conquest:stone_full_18",
-					"metaData": 2,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Shale",
-					"block": "conquest:stone_full_18",
-					"metaData": 3,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Rough Natural Sandstone",
-					"block": "conquest:stone_full_17",
-					"metaData": 4,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["minecraft:desert"] }
-				},
-				{
-					"__comment": "Tan Sandstone",
-					"block": "conquest:stone_full_18",
-					"metaData": 4,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["minecraft:desert"] }
-				},
-				{
-					"__comment": "Chalk",
-					"block": "conquest:stone_full_18",
-					"metaData": 5,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Orange Sandstone",
-					"block": "conquest:stone_full_18",
-					"metaData": 6,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["minecraft:desert"] }
-				},
-				{
-					"__comment": "Red Sandstone",
-					"block": "conquest:stone_full_18",
-					"metaData": 7,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": { "includes": ["minecraft:desert"] } 
-				},
-				{
-					"__comment": "Rough Granite",
-					"block": "conquest:stone_full_18",
-					"metaData": 8,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Lichen Blue Schist",
-					"block": "conquest:stone_full_18",
-					"metaData": 9,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 1,
-						"maxHeight": 60
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Weathered Blue Schist",
-					"block": "conquest:stone_full_18",
-					"metaData": 11,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 60,
-						"maxHeight": 90
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Greywacke",
-					"block": "conquest:stone_full_19",
-					"metaData": 6,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 60,
-						"maxHeight": 90
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Basalt",
-					"block": "conquest:stone_full_19",
-					"metaData": 3,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 60,
-						"maxHeight": 90
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "Weathered Granite",
-					"block": "conquest:stone_full_19",
-					"metaData": 1,
-					"parameters": {
-						"size": 10,
-						"variation": 5,
-						"frequency": 0.5,
-						"minHeight": 60,
-						"maxHeight": 90
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "minecraft:glowstone",
-					"parameters": {
-						"size": 15,
-						"variation": 4,
-						"frequency": 0.25,
-						"minHeight": 0,
-						"maxHeight": 20
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "These settings are roughly equivalent to the parameters of the CUSTOM world json: blockID = the unlocalized name of a block in the format 'ModID:blockName',blockMeta = the meta data value for the block (optional),size = number of blocks to spawn per ore deposit, variation = vary the size of deposits by +/- this amount, frequency = number of deposits per chunk (can be less than 1, e.g. 0.5 for 1 deposit every 2 chunks), minHeight = minimum spawn height, maxHeight = maximum spawn height, biomes = array of biomes to spawn this ore in (if empty or absent, the ore will spawn in all biomes). Note that the size values in the Minecraft CUSTOM world json do not represent the actual number of blocks spawned, where-as the size value here does represent actual number of blocks. ",
-					"block": "basemetals:copper_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 8,
-						"minHeight": 45,
-						"maxHeight": 55
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"__comment": "These settings are roughly equivalent to the parameters of the CUSTOM world json: blockID = the unlocalized name of a block in the format 'ModID:blockName',blockMeta = the meta data value for the block (optional),size = number of blocks to spawn per ore deposit, variation = vary the size of deposits by +/- this amount, frequency = number of deposits per chunk (can be less than 1, e.g. 0.5 for 1 deposit every 2 chunks), minHeight = minimum spawn height, maxHeight = maximum spawn height, biomes = array of biomes to spawn this ore in (if empty or absent, the ore will spawn in all biomes). Note that the size values in the Minecraft CUSTOM world json do not represent the actual number of blocks spawned, where-as the size value here does represent actual number of blocks. ",
-					"block": "basemetals:copper_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 2,
-						"minHeight": 0,
-						"maxHeight": 45
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "basemetals:silver_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 8,
-						"minHeight": 30,
-						"maxHeight": 40
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "basemetals:silver_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 2,
-						"minHeight": 0,
-						"maxHeight": 30
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "basemetals:tin_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 1.5,
-						"minHeight": 40,
-						"maxHeight": 50
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "basemetals:tin_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 0.5,
-						"minHeight": 0,
-						"maxHeight": 40
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "basemetals:lead_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 10,
-						"minHeight": 0,
-						"maxHeight": 65
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "basemetals:zinc_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 10,
-						"minHeight": 0,
-						"maxHeight": 65
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "basemetals:mercury_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 2,
-						"minHeight": 0,
-						"maxHeight": 30
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "basemetals:nickel_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 0.45,
-						"minHeight": 0,
-						"maxHeight": 25
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "basemetals:platinum_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 0.6,
-						"minHeight": 0,
-						"maxHeight": 30
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				},
-				{
-					"block": "basemetals:adamantine_ore",
-					"parameters": {
-						"size": 8,
-						"variation": 4,
-						"frequency": 0.25,
-						"minHeight": 0,
-						"maxHeight": 5
-					},
-					"feature": "default",
-					"replace_block": "iberia:hardstone",
-					"biomes": []
-				}
-			]
+
+
+		"iron-1": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 2,
+				"minHeight": 30,
+				"maxHeight": 40
+			},
+			"blocks": [{
+				"name": "minecraft:iron_ore",
+				"chance": 100
+			}]
 		},
-		{
-			"dimension": "1",
-			"ores": [{}]
+
+
+		"iron-2": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 30
+			},
+			"blocks": [{
+				"name": "minecraft:iron_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"gold": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 2,
+				"frequency": 6,
+				"minHeight": 0,
+				"maxHeight": 35
+			},
+			"blocks": [{
+				"name": "minecraft:gold_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"diamond": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 3,
+				"frequency": 0.35,
+				"minHeight": 0,
+				"maxHeight": 12
+			},
+			"blocks": [{
+				"name": "minecraft:diamond_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"redstone": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 3,
+				"frequency": 8,
+				"minHeight": 0,
+				"maxHeight": 50
+			},
+			"blocks": [{
+				"name": "minecraft:redstone_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"lapis-1": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 5,
+				"variation": 2,
+				"frequency": 1.5,
+				"minHeight": 0,
+				"maxHeight": 32
+			},
+			"blocks": [{
+				"name": "minecraft:lapis_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"lapis-2": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 5,
+				"variation": 2,
+				"frequency": 0.5,
+				"minHeight": 32,
+				"maxHeight": 50
+			},
+			"blocks": [{
+				"name": "minecraft:lapis_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"emerald": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 1,
+				"variation": 0,
+				"frequency": 1,
+				"minHeight": 1,
+				"maxHeight": 25
+			},
+			"blocks": [{
+				"name": "minecraft:emerald_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"quartz": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 15,
+				"variation": 8,
+				"frequency": 0.25,
+				"minHeight": 0,
+				"maxHeight": 30
+			},
+			"blocks": [{
+				"name": "minecraft:quartz_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"dirt": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 112,
+				"variation": 50,
+				"frequency": 20,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [{
+				"name": "minecraft:dirt",
+				"state": "snowy=false,variant=dirt",
+				"chance": 100
+			}]
+		},
+
+
+		"gravel": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 112,
+				"variation": 50,
+				"frequency": 16,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [{
+				"name": "minecraft:gravel",
+				"chance": 100
+			}]
+		},
+
+
+		"granite": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 112,
+				"variation": 50,
+				"frequency": 20,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [{
+				"name": "minecraft:stone",
+				"state": "variant=granite",
+				"chance": 100
+			}]
+		},
+
+
+		"diorite": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 112,
+				"variation": 50,
+				"frequency": 20,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [{
+				"name": "minecraft:stone",
+				"state": "variant=diorite",
+				"chance": 100
+			}]
+		},
+
+
+		"andesite": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 112,
+				"variation": 50,
+				"frequency": 20,
+				"minHeight": 0,
+				"maxHeight": 255
+			},
+			"blocks": [{
+				"name": "minecraft:stone",
+				"state": "variant=andesite",
+				"chance": 100
+			}]
+		},
+
+
+		"glowstone": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 15,
+				"variation": 4,
+				"frequency": 0.25,
+				"minHeight": 0,
+				"maxHeight": 20
+			},
+			"blocks": [{
+				"name": "minecraft:glowstone",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-decoanim-1": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 15,
+				"variation": 0,
+				"frequency": 200,
+				"minHeight": 0,
+				"maxHeight": 12
+			},
+			"blocks": [{
+				"name": "wtfcore:stone0DecoAnim",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-decoanim-2": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 9,
+				"variation": 0,
+				"frequency": 160,
+				"minHeight": 13,
+				"maxHeight": 20
+			},
+			"blocks": [{
+				"name": "wtfcore:stone0DecoAnim",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-decoanim-3": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 0,
+				"frequency": 140,
+				"minHeight": 21,
+				"maxHeight": 25
+			},
+			"blocks": [{
+				"name": "wtfcore:stone0DecoAnim",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-decoanim-4": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 7,
+				"variation": 0,
+				"frequency": 120,
+				"minHeight": 26,
+				"maxHeight": 30
+			},
+			"blocks": [{
+				"name": "wtfcore:stone0DecoAnim",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-decoanim-5": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 6,
+				"variation": 0,
+				"frequency": 100,
+				"minHeight": 31,
+				"maxHeight": 35
+			},
+			"blocks": [{
+				"name": "wtfcore:stone0DecoAnim",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-decoanim-6": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 5,
+				"variation": 0,
+				"frequency": 80,
+				"minHeight": 36,
+				"maxHeight": 40
+			},
+			"blocks": [{
+				"name": "wtfcore:stone0DecoAnim",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-decoanim-7": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 4,
+				"variation": 0,
+				"frequency": 60,
+				"minHeight": 41,
+				"maxHeight": 45
+			},
+			"blocks": [{
+				"name": "wtfcore:stone0DecoAnim",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-decoanim-8": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 3,
+				"variation": 0,
+				"frequency": 40,
+				"minHeight": 46,
+				"maxHeight": 50
+			},
+			"blocks": [{
+				"name": "wtfcore:stone0DecoAnim",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-decoanim-9": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 2,
+				"variation": 0,
+				"frequency": 20,
+				"minHeight": 51,
+				"maxHeight": 55
+			},
+			"blocks": [{
+				"name": "wtfcore:stone0DecoAnim",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-decoanim-10": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 1,
+				"variation": 0,
+				"frequency": 10,
+				"minHeight": 56,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "wtfcore:stone0DecoAnim",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-nitre-1": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 4,
+				"variation": 2,
+				"frequency": 4,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "wtfcore:nitre_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"wtfcore-nitre-2": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 4,
+				"variation": 2,
+				"frequency": 6,
+				"minHeight": 1,
+				"maxHeight": 30
+			},
+			"blocks": [{
+				"name": "wtfcore:nitre_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"conquest-natural-andesite": {
+			"__comment": "Natural Andesite",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 20,
+				"variation": 3,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_2",
+				"chance": 100,
+				"metaData": 7
+			}]
+		},
+
+
+		"conquest-smooth-limestone": {
+			"__comment": "Smooth Limestone",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 50,
+				"variation": 10,
+				"frequency": 0.6,
+				"minHeight": 1,
+				"maxHeight": 80
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_18",
+				"chance": 100,
+				"metaData": 15
+			}]
+		},
+
+
+		"conquest-colorful-slate": {
+			"__comment": "Colourful Slate",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 50,
+				"variation": 10,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 80
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_1",
+				"chance": 100,
+				"metaData": 5
+			}]
+		},
+
+
+		"conquest-slate": {
+			"__comment": "Slate",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 50,
+				"variation": 10,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 80
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_14",
+				"chance": 100,
+				"metaData": 9
+			}]
+		},
+
+		"conquest-uncut-marble": {
+			"__comment": "Uncut Marble",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 50,
+				"variation": 10,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 80
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_14",
+				"chance": 100,
+				"metaData": 10
+			}]
+		},
+
+
+		"conquest-grey-and-pink-granite": {
+			"__comment": "Grey and Pink Granite",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 80
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_14",
+				"chance": 100,
+				"metaData": 11
+			}]
+		},
+
+
+		"conquest-light-brown-mesa-stone": {
+			"__comment": "Light Brown Mesa Stone",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"MESA"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 80
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_14",
+				"chance": 100,
+				"metaData": 13
+			}]
+		},
+
+		"conquest-stone-full-17": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"minecraft:desert"
+				]
+			},
+			"parameters": {
+				"size": 50,
+				"variation": 10,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 80
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_17",
+				"chance": 100,
+				"metaData": 4
+			}]
+		},
+
+		"conquest-stone-full-2": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 20,
+				"variation": 10,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 40
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_2",
+				"chance": 100,
+				"metaData": 7
+			}]
+		},
+
+
+		"conquest Natural Red Mossy Sandstone": {
+			"__comment": "Natural Red Mossy Sandstone",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"minecraft:desert"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 0,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_2",
+				"chance": 100,
+				"metaData": 15
+			}]
+		},
+
+		"conquest Gneiss": {
+			"__comment": "Gneiss",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 0,
+				"maxHeight": 90
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_26",
+				"chance": 100,
+				"metaData": 3
+			}]
+		},
+
+
+		"conquest Green Schist": {
+			"__comment": "Green Schist",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 0,
+				"maxHeight": 90
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_26",
+				"chance": 100,
+				"metaData": 4
+			}]
+		},
+
+
+		"conquest Grey Quartzite": {
+			"__comment": "Gray Quartzite",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"minecraft:desert"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 0,
+				"maxHeight": 40
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_26",
+				"chance": 100,
+				"metaData": 5
+			}]
+		},
+
+		"conquest Pink Quartzite": {
+			"__comment": "Pink Quartzite",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"minecraft:desert"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 0,
+				"maxHeight": 40
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_26",
+				"chance": 100,
+				"metaData": 6
+			}]
+		},
+
+		"conquest Calcite": {
+			"__comment": "Calcite",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 80
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_26",
+				"chance": 100,
+				"metaData": 12
+			}]
+		},
+
+
+		"conquest Black Marble": {
+			"__comment": "Black Marble",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"minecraft:desert"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_15",
+				"chance": 100,
+				"metaData": 15
+			}]
+		},
+
+		"conquest Blue Marble": {
+			"__comment": "Blue Marble",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"SNOWY"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_16",
+				"chance": 100,
+				"metaData": 0
+			}]
+		},
+
+		"conquest Gray Marble": {
+			"__comment": "Gray Marble",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"MESA"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_16",
+				"chance": 100,
+				"metaData": 1
+			}]
+		},
+
+		"conquest Green Marble": {
+			"__comment": "Green Marble",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"FOREST"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_16",
+				"chance": 100,
+				"metaData": 2
+			}]
+		},
+
+		"conquest Pink Marble": {
+			"__comment": "Pink Marble",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"SAVANNA"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_16",
+				"chance": 100,
+				"metaData": 3
+			}]
+		},
+
+		"conquest Red Marble": {
+			"__comment": "Red Marble",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"minecraft:desert"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_16",
+				"chance": 100,
+				"metaData": 4
+			}]
+		},
+
+		"conquest Blue Schist": {
+			"__comment": "Blue Schist",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_18",
+				"chance": 100,
+				"metaData": 2
+			}]
+		},
+
+
+		"conquest Shale": {
+			"__comment": "Shale",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_18",
+				"chance": 100,
+				"metaData": 3
+			}]
+		},
+
+
+		"conquest Rought Natural Sandstone": {
+			"__comment": "Rough Natural Sandstone",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"minecraft:desert"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_17",
+				"chance": 100,
+				"metaData": 4
+			}]
+		},
+
+		"conquest Tan Sandstone": {
+			"__comment": "Tan Sandstone",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"minecraft:desert"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_18",
+				"chance": 100,
+				"metaData": 4
+			}]
+		},
+
+		"conquest Chalk": {
+			"__comment": "Chalk",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_18",
+				"chance": 100,
+				"metaData": 5
+			}]
+		},
+
+		"conquest Orange Sandstone": {
+			"__comment": "Orange Sandstone",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"minecraft:desert"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_18",
+				"chance": 100,
+				"metaData": 6
+			}]
+		},
+
+		"conquest Red Sandstone": {
+			"__comment": "Red Sandstone",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"includes": [
+					"minecraft:desert"
+				]
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_18",
+				"chance": 100,
+				"metaData": 7
+			}]
+		},
+		"conquest Rough Granite": {
+			"__comment": "Rough Granite",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_18",
+				"chance": 100,
+				"metaData": 8
+			}]
+		},
+
+
+		"conquest Lichen Blue Schist": {
+			"__comment": "Lichen Blue Schist",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 1,
+				"maxHeight": 60
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_18",
+				"chance": 100,
+				"metaData": 9
+			}]
+		},
+
+
+		"conquest Weathered Blue Schist": {
+			"__comment": "Weathered Blue Schist",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 60,
+				"maxHeight": 90
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_18",
+				"chance": 100,
+				"metaData": 11
+			}]
+		},
+
+
+		"conquest Greywacke": {
+			"__comment": "Greywacke",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 60,
+				"maxHeight": 90
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_19",
+				"chance": 100,
+				"metaData": 6
+			}]
+		},
+
+
+		"conquest Basalt": {
+			"__comment": "Basalt",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 60,
+				"maxHeight": 90
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_19",
+				"chance": 100,
+				"metaData": 3
+			}]
+		},
+
+
+		"conquest Weathered Granite": {
+			"__comment": "Weathered Granite",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 10,
+				"variation": 5,
+				"frequency": 0.5,
+				"minHeight": 60,
+				"maxHeight": 90
+			},
+			"blocks": [{
+				"name": "conquest:stone_full_19",
+				"chance": 100,
+				"metaData": 1
+			}]
+		},
+
+
+		"glowstone-2": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 15,
+				"variation": 4,
+				"frequency": 0.25,
+				"minHeight": 0,
+				"maxHeight": 20
+			},
+			"blocks": [{
+				"name": "minecraft:glowstone",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals copper 1": {
+			"__comment": "These settings are roughly equivalent to the parameters of the CUSTOM world json: blockID = the unlocalized name of a block in the format 'ModID:blockName',blockMeta = the meta data value for the block (optional),size = number of blocks to spawn per ore deposit, variation = vary the size of deposits by +\/- this amount, frequency = number of deposits per chunk (can be less than 1, e.g. 0.5 for 1 deposit every 2 chunks), minHeight = minimum spawn height, maxHeight = maximum spawn height, biomes = array of biomes to spawn this ore in (if empty or absent, the ore will spawn in all biomes). Note that the size values in the Minecraft CUSTOM world json do not represent the actual number of blocks spawned, where-as the size value here does represent actual number of blocks. ",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 8,
+				"minHeight": 45,
+				"maxHeight": 55
+			},
+			"blocks": [{
+				"name": "basemetals:copper_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals copper 2": {
+			"__comment": "These settings are roughly equivalent to the parameters of the CUSTOM world json: blockID = the unlocalized name of a block in the format 'ModID:blockName',blockMeta = the meta data value for the block (optional),size = number of blocks to spawn per ore deposit, variation = vary the size of deposits by +\/- this amount, frequency = number of deposits per chunk (can be less than 1, e.g. 0.5 for 1 deposit every 2 chunks), minHeight = minimum spawn height, maxHeight = maximum spawn height, biomes = array of biomes to spawn this ore in (if empty or absent, the ore will spawn in all biomes). Note that the size values in the Minecraft CUSTOM world json do not represent the actual number of blocks spawned, where-as the size value here does represent actual number of blocks. ",
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 2,
+				"minHeight": 0,
+				"maxHeight": 45
+			},
+			"blocks": [{
+				"name": "basemetals:copper_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals silver 1": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 8,
+				"minHeight": 30,
+				"maxHeight": 40
+			},
+			"blocks": [{
+				"name": "basemetals:silver_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals silver 2": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 2,
+				"minHeight": 0,
+				"maxHeight": 30
+			},
+			"blocks": [{
+				"name": "basemetals:silver_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals tin 1": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 1.5,
+				"minHeight": 40,
+				"maxHeight": 50
+			},
+			"blocks": [{
+				"name": "basemetals:tin_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals tin 2": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 0.5,
+				"minHeight": 0,
+				"maxHeight": 40
+			},
+			"blocks": [{
+				"name": "basemetals:tin_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals lead": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 65
+			},
+			"blocks": [{
+				"name": "basemetals:lead_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals zinc": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 10,
+				"minHeight": 0,
+				"maxHeight": 65
+			},
+			"blocks": [{
+				"name": "basemetals:zinc_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals mercury": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 2,
+				"minHeight": 0,
+				"maxHeight": 30
+			},
+			"blocks": [{
+				"name": "basemetals:mercury_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals nickel": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 0.45,
+				"minHeight": 0,
+				"maxHeight": 25
+			},
+			"blocks": [{
+				"name": "basemetals:nickel_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals platinum": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 0.6,
+				"minHeight": 0,
+				"maxHeight": 30
+			},
+			"blocks": [{
+				"name": "basemetals:platinum_ore",
+				"chance": 100
+			}]
+		},
+
+
+		"basemetals adamantine": {
+			"retrogen": false,
+			"enabled": true,
+			"feature": "default",
+			"replaces": "default",
+			"dimensions": [],
+			"biomes": {
+				"excludes": []
+			},
+			"parameters": {
+				"size": 8,
+				"variation": 4,
+				"frequency": 0.25,
+				"minHeight": 0,
+				"maxHeight": 5
+			},
+			"blocks": [{
+				"name": "basemetals:adamantine_ore",
+				"chance": 100
+			}]
 		}
-	]
+	}
 }
